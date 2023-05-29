@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title> Landing Page </title>
+        <meta charset = "UTF-8">
+        <meta name = "description" content = "My first HTML page">
+        <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+        <link rel = "stylesheet" type = "text/css" href = "index.css">
+    </head>
+
+    <body>
+        <div class = "class1">
+            <section>
+                <h1>Hello! Welcome to my landing page </h1>
+                <h3>My name is Anthony <i>although you can call me Tony </i> :)</h3>
+                <img src = "Bench.jpg" alt = "Me sitting on a bench" />
+                <p class = "text"> Github Username: <i>AnthonyMatar</i> </p>
+                <h3 class = "border">
+                    <section class = "text">
+                        You may be asking yourself, who is this Tony guy? Why is he sitting on a bench? Well...
+                    </section>
+                </h3>
+                <p></p>
+                <p class = "aboutMe">
+                    I've just finished my second year studying Computer Science and Data Science at the University of Virginia.
+                    I only just got into CS last year, although have found it to be more and more interesting as I've delved further 
+                    into the subject. I'm proficcient in Java, but pretty rusty in Python. I also know R, C,  a little SQL, 
+                    and Assemblyx86-64. I'm excited to gain profeciency in HTML, CSS, and JavaScript during my time in Cape Town.
+                <p class = "aboutMe">
+                    I started going to the gym in highschool because of sports and have been no where close to as consistent 
+                    as I was before, although I do enjoy working out as a stress-reliever and consider myself semi-active. My music taste
+                    ranges although I'd say my favorite artist by far is Mac Miller, followed by SZA, Frank Ocean, and Kendrick Lamar. When
+                    I'm not stressed at my computer debugging a programming assignment, I enjoy going on (moderate) hikes in nature and
+                    sitting on park benches.
+                </p>
+                </p>
+            </section>
+            
+        </div>
+        <section class = "interactive">
+            <form>
+                <input type= "text" name = "howCool" placeholder="How cool is this bench?"></input>
+                <input type="radio" value="coolLevel">
+                <label for="coolLevel">Click this button if you like this bench</label>
+                <input type ="checkbox" value = "coolLevel2">
+                <label for = "coolLevel2">Or click this button if you like squares better</label>
+            </form>
+            <button id = "coolButton" onclick="increment()"> Click this button to raise the cooleness level </button>
+            <section>
+                Bench Coolness Level: 
+                <h2 id = "coolLevelIncrement">0</h2>
+            </section>
+            <script src = "index.js"></script>
+        </section>
+    </body>
+</html>
